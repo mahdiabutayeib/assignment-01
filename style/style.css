@@ -6,35 +6,47 @@
   font-variation-settings:
     "wdth" 100;
 }
+
+
+
 .banner {
   text-align: center;
   padding: 100px 20px;
-  background-color: #f5f7ff;
+  background: url(../resource/Hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background:url(../resource/Hero-bg.png);
-  background-repeat: no-repeat;
 }
-nav ul li{
-    list-style: none;
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
 }
-nav ul a{
-    text-decoration: none;
-    font-size: 20px;
+
+.navbar ul li a {
+  text-decoration: none;
 }
-nav ul{
+
+nav {
     display: flex;
-}
-nav{
-    display: flex;
+    
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
 .logo {
   font-weight: bold;
   color: #4f46e5;
@@ -46,12 +58,13 @@ nav{
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 6px;
 }
-.btn:hover {
 
+.btn:hover {
   background-color: #3730a3;
 }
+
 .action {
   display: flex;
   padding: 60px 20px;
@@ -112,4 +125,74 @@ nav{
 }
 reviewer img {
   border-radius: 50%;
+}
+.rtf {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+.rtf img {
+  margin-top: 30px;
+  max-width: 100%;
+  border-radius: 15px;
+}
+.contact {
+  display: flex;
+  padding: 60px 20px;
+  gap: 40px;
+  background-color: #f5f8ff;
+}
+.contact-left, .contact-right {
+  flex: 1 1 300px;
+  
+}
+.contact h2{
+    text-align: center;
+    
+}
+.contact-right label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.contact-right input
+{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+.footer h2 {
+  color: #4f46e5;
+}
+.footer nav {
+  margin-top: 20px;
+
+}
+
+.footer nav a {
+  margin: 0 10px;
+  color: #555;
+  text-decoration: none;
+}
+
+.footer nav a:hover {
+  color: #111;
+}
+.footer p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contact {
+  display: flex;
+  padding: 60px 20px;
+  gap: 40px;
+  background-color: #f5f8ff;
+  align-items: center; 
 }
